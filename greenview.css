@@ -7,11 +7,6 @@
 :root {
 	--border-color: #e1e7e8;
 	--code-bg-color: #f8f8f8;
-	--header-color: #363c3c;
-	--link-color: #f0423d;
-	--side-bar-bg-color: #fafafa;
-	--window-border: 1px solid rgba(0, 0, 0, 0.07);
-	--active-file-bg-color: #f2f2f2;
 	/* */
 	--body-font: "source-sans-pro", sans-serif;
 	--border-radius: 6px;
@@ -24,11 +19,15 @@
 	--line-height: 1;
 	--main-content-margin: 0 auto;
 	--main-content-max-width: 200ch;
-	--monospace-font-size: 14px;
-	--monospace-font: "LetterGothicFS-Medium", "Mononoki", monospace;
-	--monospace-line-height: 1;
+
+	--code-font-size: 15px;
+	--monospace-font-size: 15px;
+	/* --monospace-font: "LetterGothicFS-Medium", "mplus-1mn", "Mononoki", monospace; */
+	--monospace-font: "mplus-1mn", "Mononoki", monospace;
+	--monospace-line-height: 1.1;
 	--monospace-foreground-color: #24c4b6;
 	--monospace-background-color: #122d33;
+
 	--nav-width: 200px;
 	--vertical-padding: 8px;
 	--accent-color: #194a55;
@@ -115,6 +114,17 @@
 	src: local("Mononoki Bold Italic"),
 		url("./greenview/mononoki-font/mononoki-bolditalic.woff") format("woff");
 }
+
+@font-face {
+	font-family: "mplus-1mn";
+	font-style: normal;
+	font-weight: normal;
+	src: url("./greenview/mplus-1mn-font/mplus-1mn-regular.eot?#iefix") format("embedded-opentype"),
+		url("./greenview/mplus-1mn-font/mplus-1mn-regular.woff") format("woff"),
+		url("./greenview/mplus-1mn-font/mplus-1mn-regular.ttf") format("truetype");
+}
+
+/* --- end of Fonts section --- */
 
 /* Narrow layout styles */
 @media (max-width: 640px) {
@@ -326,7 +336,7 @@ p {
 
 /**
  * Code Fences
- * see http:/*support.typora.io/Code-Block-Styles
+ * see http://support.typora.io/Code-Block-Styles
  */
 
 .cm-s-inner {
@@ -335,6 +345,7 @@ p {
 	padding: 0.25rem 0;
 	background-color: var(--accented-background-color);
 	font-family: var(--monospace-font);
+	font-size: var(--code-font-size);
 }
 .cm-s-inner .CodeMirror-gutters {
 	background: var(--accented-background-color);
