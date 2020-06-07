@@ -1,4 +1,4 @@
-## Greenview - A theme for Typora
+## Greenview - A Typora theme
 
 A green theme to be used in [Typora](https://typora.io) editor.
 
@@ -13,20 +13,21 @@ For example, on macOS the location is `/Users/{username}/Library/Application Sup
 ### Monospaced Fonts
 
 The monopaced fonts that are configured (in this order) are:
-- [Letter Gotic FS](https://www.fontspring.com/fonts/fontsite/letter-gothic-fs) Medium,
-  - this is what I am currently using (installed on my macOS, so there is no need for woff files) and it is a paid one.
+- [M+ 1mn](https://mplus-fonts.osdn.jp/about-en.html)
 - [Mononoki](https://github.com/madmalik/mononoki)
-  - it is included in the theme, as being free.
 
 However, you can customize the font to be used by updating this line in `greenview.css` file:<br/>
-`--monospace-font: "LetterGothicFS-Medium", "Mononoki", monospace;`
+`--monospace-font: "mplus-1mn", "Mononoki", monospace;`
 
 ## Screenshots
 
 As this is very visual related thing, see below some samples.
 
-Using _Letter Gothic FS Medium_ font:
-![Sample](./sample_lettergothicfs.png)
+Using _M+ 1mn_ font:
+![Sample](./sample_mplus-1mn.png)
 
 Using _Mononoki_ font:
 ![Sample](./sample_mononoki.png)
+
+Using _Letter Gothic FS Medium_ font, something that I bought and use it sometimes:
+![Sample](./sample_lettergothicfs.png)
