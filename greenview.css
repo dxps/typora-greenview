@@ -16,7 +16,7 @@
 	--h1-fontsize: 2rem;
 	--h2-fontsize: 1.5rem;
 	--h3-fontsize: 1.125rem;
-	--line-height: 1;
+	--line-height: 1.2;
 	--main-content-margin: 0 auto;
 	--main-content-max-width: 200ch;
 
@@ -25,7 +25,7 @@
 	--monospace-font-size: 15px;
 	/* --monospace-font: "LetterGothicFS-Medium", "mplus-1mn", "Mononoki", monospace; */
 	--monospace-font: "mplus-1mn", "Mononoki", monospace;
-	--monospace-line-height: 1.1;
+	--monospace-line-height: 1;
 	--monospace-foreground-color: #24c4b6;
 	--monospace-background-color: #122d33;
 
