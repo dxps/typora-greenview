@@ -2,15 +2,13 @@
 
 A green theme to be used in [Typora](https://typora.io) editor.
 
-Highly influenced by my preferences of green and solarized dark like color schemes.
-
-Most of the credits goes to [LostKeys](https://theme.typora.io/theme/Lostkeys/) and [Solarized](https://theme.typora.io/theme/Solarized/) themes authors. I just adjusted some colors, sizes and corner roundness.
+Highly influenced by my preferences of green and solarized dark like color schemes. Most of the credits goes to [LostKeys](https://theme.typora.io/theme/Lostkeys/) and [Solarized](https://theme.typora.io/theme/Solarized/) themes authors. I just adjusted some colors, sizes and corner roundness.
 
 ### Installation
 
-Based on the operating system you use, the location where to put the theme files differs. Go to Typora's `Preferences > Appearance` menu path and click `Open Theme Folder` to find the location.
+Based on the operating system you use, the location where to put the theme files is different. Go to Typora's `Preferences > Appearance` menu path and click `Open Theme Folder` button to find that location.
 
-For example, on macOS the location is `/Users/{username{/Library/Application Support/abnerworks.Typora/themes`.
+For example, on macOS the location is `/Users/{username}/Library/Application Support/abnerworks.Typora/themes`.
 
 ### Monospaced Fonts
 
