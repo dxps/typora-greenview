@@ -21,6 +21,7 @@
 	--main-content-max-width: 200ch;
 
 	--code-font-size: 15px;
+	--code-line-height: 1.1;
 	--monospace-font-size: 15px;
 	/* --monospace-font: "LetterGothicFS-Medium", "mplus-1mn", "Mononoki", monospace; */
 	--monospace-font: "mplus-1mn", "Mononoki", monospace;
@@ -346,6 +347,7 @@ p {
 	background-color: var(--accented-background-color);
 	font-family: var(--monospace-font);
 	font-size: var(--code-font-size);
+	line-height: var(--code-line-height);
 }
 .cm-s-inner .CodeMirror-gutters {
 	background: var(--accented-background-color);
