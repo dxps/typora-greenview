@@ -272,6 +272,13 @@ h2 + table tr:first-child td {
 .md-table-edit {
 }
 
+/*  Table of Contents */
+.md-toc-h4,
+.md-toc-h5,
+.md-toc-h6 {
+	display: none;
+}
+
 /* lists */
 ul {
 }
