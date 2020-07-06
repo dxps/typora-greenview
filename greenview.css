@@ -23,7 +23,6 @@
 	--code-font-size: 15px;
 	--code-line-height: 1.1;
 	--monospace-font-size: 15px;
-	/* --monospace-font: "LetterGothicFS-Medium", "mplus-1mn", "Mononoki", monospace; */
 	--monospace-font: "mplus-1mn", "Mononoki", monospace;
 	--monospace-line-height: 1;
 	--monospace-foreground-color: #24c4b6;
@@ -39,11 +38,12 @@
 	--border-color: #194a55;
 	--link-color: #4fc3f7;
 
-	--select-text-bg-color: #009c8b;
-
+	--select-text-bg-color: #061214;
+	--select-text-font-color: #00ffdd;
 	--side-bar-bg-color: #122d33;
+	--active-file-bg-color: #061214;
+
 	--window-border: 1px solid rgba(0, 0, 0, 0.07);
-	--active-file-bg-color: #0c272c;
 }
 
 #write {
