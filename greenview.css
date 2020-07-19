@@ -38,8 +38,8 @@
 	--border-color: #194a55;
 	--link-color: #4fc3f7;
 
-	--select-text-bg-color: #061214;
-	--select-text-font-color: #00ffdd;
+	--select-text-bg-color: #12a390;
+	--select-text-font-color: #fff;
 	--side-bar-bg-color: #122d33;
 	--active-file-bg-color: #061214;
 
@@ -272,11 +272,20 @@ h2 + table tr:first-child td {
 .md-table-edit {
 }
 
-/*  Table of Contents paragraph: hide h4-h6 entries */
+/**
+ * Table of Contents 
+ */
+
+/* Hide h4 to h6 paragraphs. */
 .md-toc-h4,
 .md-toc-h5,
 .md-toc-h6 {
 	display: none;
+}
+
+/* Smaller 'padding' between the ToC and content. */
+.md-toc {
+	min-height: 2rem;
 }
 
 /* lists */
