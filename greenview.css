@@ -272,8 +272,8 @@ h2 + table tr:first-child td {
 .md-table-edit {
 }
 
-/**
- * Table of Contents 
+/*
+ * Table of Contents (ToC)
  */
 
 /* Hide h4 to h6 paragraphs. */
@@ -286,6 +286,11 @@ h2 + table tr:first-child td {
 /* Smaller 'padding' between the ToC and content. */
 .md-toc {
 	min-height: 2rem;
+}
+
+/* Smaller 'padding' for the top of the content on macOS */
+.mac-seamless-mode content {
+	margin-top: -24px;
 }
 
 /* lists */
