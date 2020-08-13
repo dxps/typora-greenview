@@ -33,7 +33,7 @@
 	--accent-color: #194a55;
 	--accented-background-color: #303b41;
 	--bg-color: #122d33;
-	--text-color: #ecedef;
+	--text-color: #bfede9;
 	--header-color: #12a390;
 	--border-color: #194a55;
 	--link-color: #4fc3f7;
@@ -91,16 +91,14 @@
 	font-family: "Mononoki";
 	font-style: normal;
 	font-weight: normal;
-	src: local("Mononoki Regular"),
-		url("./greenview/mononoki-font/mononoki-regular.woff") format("woff");
+	src: local("Mononoki Regular"), url("./greenview/mononoki-font/mononoki-regular.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Mononoki";
 	font-style: italic;
 	font-weight: normal;
-	src: local("Mononoki Italic"),
-		url("./greenview/mononoki-font/mononoki-italic.woff") format("woff");
+	src: local("Mononoki Italic"), url("./greenview/mononoki-font/mononoki-italic.woff") format("woff");
 }
 
 @font-face {
@@ -114,8 +112,7 @@
 	font-family: "Mononoki";
 	font-style: italic;
 	font-weight: bold;
-	src: local("Mononoki Bold Italic"),
-		url("./greenview/mononoki-font/mononoki-bolditalic.woff") format("woff");
+	src: local("Mononoki Bold Italic"), url("./greenview/mononoki-font/mononoki-bolditalic.woff") format("woff");
 }
 
 @font-face {
@@ -288,9 +285,9 @@ h2 + table tr:first-child td {
 	min-height: 2rem;
 }
 
-/* Smaller 'padding' for the top of the content on macOS */
+/* Smaller 'padding' for the top of the content on MacOS */
 .mac-seamless-mode content {
-	margin-top: -24px;
+	margin-top: -20px;
 }
 
 /* lists */
