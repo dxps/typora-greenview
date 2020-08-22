@@ -5,49 +5,49 @@
 @import "greenview/sourcemode.dark.css";
 
 :root {
-	--border-color: #e1e7e8;
-	--code-bg-color: #f8f8f8;
-	/* */
-	--body-font: "source-sans-pro", sans-serif;
-	--border-radius: 6px;
-	--document-horizontal-margin: 30px;
-	--document-padding-x: 4ch;
-	--font-size: 16px;
-	--h1-fontsize: 2rem;
-	--h2-fontsize: 1.5rem;
-	--h3-fontsize: 1.125rem;
-	--line-height: 1.2;
-	--main-content-margin: 0 auto;
-	--main-content-max-width: 200ch;
+  --border-color: #e1e7e8;
+  --code-bg-color: #f8f8f8;
+  /* */
+  --body-font: "source-sans-pro", sans-serif;
+  --border-radius: 6px;
+  --document-horizontal-margin: 30px;
+  --document-padding-x: 4ch;
+  --font-size: 16px;
+  --h1-fontsize: 2rem;
+  --h2-fontsize: 1.5rem;
+  --h3-fontsize: 1.125rem;
+  --line-height: 1.2;
+  --main-content-margin: 0 auto;
+  --main-content-max-width: 200ch;
 
-	--code-font-size: 15px;
-	--code-line-height: 1.1;
-	--monospace-font-size: 15px;
-	--monospace-font: "mplus-1mn", "Mononoki", monospace;
-	--monospace-line-height: 1;
-	--monospace-foreground-color: #24c4b6;
-	--monospace-background-color: #122d33;
+  --code-font-size: 15px;
+  --code-line-height: 1.1;
+  --monospace-font-size: 15px;
+  --monospace-font: "mplus-1mn", "Mononoki", monospace;
+  --monospace-line-height: 1;
+  --monospace-foreground-color: #24c4b6;
+  --monospace-background-color: #263238;
 
-	--nav-width: 200px;
-	--vertical-padding: 8px;
-	--accent-color: #194a55;
-	--accented-background-color: #303b41;
-	--bg-color: #122d33;
-	--text-color: #afd9d4;
-	--header-color: #12a390;
-	--border-color: #194a55;
-	--link-color: #4fc3f7;
+  --nav-width: 200px;
+  --vertical-padding: 8px;
+  --accent-color: #194a55;
+  --accented-background-color: #303b41;
+  --bg-color: #263238;
+  --text-color: #afd9d4;
+  --header-color: #12a390;
+  --border-color: #263238;
+  --link-color: #4fc3f7;
 
-	--select-text-bg-color: #12a390;
-	--select-text-font-color: #fff;
-	--side-bar-bg-color: #122d33;
-	--active-file-bg-color: #061214;
+  --select-text-bg-color: #12a390;
+  --select-text-font-color: #fff;
+  --side-bar-bg-color: #263238;
+  --active-file-bg-color: #2f3e46;
 
-	--window-border: 1px solid rgba(0, 0, 0, 0.07);
+  --window-border: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 #write {
-	cursor: -webkit-image-set(url("night/cursor.png") 1x, url("night/cursor@2x.png") 2x) 8 8, auto;
+  cursor: -webkit-image-set(url("night/cursor.png") 1x, url("night/cursor@2x.png") 2x) 8 8, auto;
 }
 
 /* 
@@ -57,94 +57,94 @@
 */
 
 @font-face {
-	font-family: "source-sans-pro";
-	font-style: normal;
-	font-weight: normal;
-	src: local("source-sans-pro"), local("SourceSansPro-Regular"),
-		url("./greenview/source-sans-pro-font/SourceSansPro-Regular.ttf");
+  font-family: "source-sans-pro";
+  font-style: normal;
+  font-weight: normal;
+  src: local("source-sans-pro"), local("SourceSansPro-Regular"),
+    url("./greenview/source-sans-pro-font/SourceSansPro-Regular.ttf");
 }
 @font-face {
-	font-family: "source-sans-pro";
-	font-style: italic;
-	font-weight: normal;
-	src: local("source-sans-pro"), local("SourceSansPro-It"),
-		url("./greenview/source-sans-pro-font/SourceSansPro-It.ttf");
-}
-
-@font-face {
-	font-family: "source-sans-pro";
-	font-style: normal;
-	font-weight: bold;
-	src: local("source-sans-pro"), local("SourceSansPro-Semibold"),
-		url("./greenview/source-sans-pro-font/SourceSansPro-Semibold.ttf");
+  font-family: "source-sans-pro";
+  font-style: italic;
+  font-weight: normal;
+  src: local("source-sans-pro"), local("SourceSansPro-It"),
+    url("./greenview/source-sans-pro-font/SourceSansPro-It.ttf");
 }
 
 @font-face {
-	font-family: "source-sans-pro";
-	font-style: italic;
-	font-weight: bold;
-	src: local("source-sans-pro"), local("SourceSansPro-SemiboldIt"),
-		url("./greenview/source-sans-pro-font/SourceSansPro-SemiboldIt.ttf");
+  font-family: "source-sans-pro";
+  font-style: normal;
+  font-weight: bold;
+  src: local("source-sans-pro"), local("SourceSansPro-Semibold"),
+    url("./greenview/source-sans-pro-font/SourceSansPro-Semibold.ttf");
 }
 
 @font-face {
-	font-family: "Mononoki";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Mononoki Regular"), url("./greenview/mononoki-font/mononoki-regular.woff") format("woff");
+  font-family: "source-sans-pro";
+  font-style: italic;
+  font-weight: bold;
+  src: local("source-sans-pro"), local("SourceSansPro-SemiboldIt"),
+    url("./greenview/source-sans-pro-font/SourceSansPro-SemiboldIt.ttf");
 }
 
 @font-face {
-	font-family: "Mononoki";
-	font-style: italic;
-	font-weight: normal;
-	src: local("Mononoki Italic"), url("./greenview/mononoki-font/mononoki-italic.woff") format("woff");
+  font-family: "Mononoki";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Mononoki Regular"), url("./greenview/mononoki-font/mononoki-regular.woff") format("woff");
 }
 
 @font-face {
-	font-family: "Mononoki";
-	font-style: normal;
-	font-weight: bold;
-	src: local("Mononoki Bold"), url("./greenview/mononoki-font/mononoki-bold.woff") format("woff");
+  font-family: "Mononoki";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Mononoki Italic"), url("./greenview/mononoki-font/mononoki-italic.woff") format("woff");
 }
 
 @font-face {
-	font-family: "Mononoki";
-	font-style: italic;
-	font-weight: bold;
-	src: local("Mononoki Bold Italic"), url("./greenview/mononoki-font/mononoki-bolditalic.woff") format("woff");
+  font-family: "Mononoki";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Mononoki Bold"), url("./greenview/mononoki-font/mononoki-bold.woff") format("woff");
 }
 
 @font-face {
-	font-family: "mplus-1mn";
-	font-style: normal;
-	font-weight: normal;
-	src: url("./greenview/mplus-1mn-font/mplus-1mn-regular.eot?#iefix") format("embedded-opentype"),
-		url("./greenview/mplus-1mn-font/mplus-1mn-regular.woff") format("woff"),
-		url("./greenview/mplus-1mn-font/mplus-1mn-regular.ttf") format("truetype");
+  font-family: "Mononoki";
+  font-style: italic;
+  font-weight: bold;
+  src: local("Mononoki Bold Italic"), url("./greenview/mononoki-font/mononoki-bolditalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "mplus-1mn";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./greenview/mplus-1mn-font/mplus-1mn-regular.eot?#iefix") format("embedded-opentype"),
+    url("./greenview/mplus-1mn-font/mplus-1mn-regular.woff") format("woff"),
+    url("./greenview/mplus-1mn-font/mplus-1mn-regular.ttf") format("truetype");
 }
 
 /* --- end of Fonts section --- */
 
 /* Narrow layout styles */
 @media (max-width: 640px) {
-	:root {
-		--document-padding-x: 3ch;
-		--h1-fontsize: 1.8rem;
-		--h2-fontsize: 1.125rem;
-	}
+  :root {
+    --document-padding-x: 3ch;
+    --h1-fontsize: 1.8rem;
+    --h2-fontsize: 1.125rem;
+  }
 }
 
 html {
-	font-size: var(--font-size);
-	background-color: var(--bg-color);
+  font-size: var(--font-size);
+  background-color: var(--bg-color);
 }
 
 html,
 body {
-	color: var(--text-color);
-	font-family: var(--body-font);
-	line-height: var(--line-height);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  line-height: var(--line-height);
 }
 
 /* on Windows/Linux, it is the part that is not titlebar or status bar.*/
@@ -152,11 +152,11 @@ content {
 }
 
 #write {
-	/* size of writing area: */
-	padding-left: var(--document-padding-x);
-	padding-right: var(--document-padding-x);
-	max-width: var(--main-content-max-width);
-	box-sizing: border-box;
+  /* size of writing area: */
+  padding-left: var(--document-padding-x);
+  padding-right: var(--document-padding-x);
+  max-width: var(--main-content-max-width);
+  box-sizing: border-box;
 }
 
 /**
@@ -167,78 +167,78 @@ content {
 
 /* yaml */
 pre.md-meta-block {
-	background-color: var(--bg-color);
-	padding-bottom: 0.5rem;
-	color: var(--accent-color);
-	border-bottom: 2px solid var(--border-color);
+  background-color: var(--bg-color);
+  padding-bottom: 0.5rem;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--border-color);
 }
 
 /* headings */
 h1 {
-	margin-top: 2rem;
-	margin-bottom: 1rem;
-	font-size: var(--h1-fontsize);
-	font-weight: bold;
-	color: var(--header-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: var(--h1-fontsize);
+  font-weight: bold;
+  color: var(--header-color);
 }
 h1:not(:first-child) {
-	margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 h2 {
-	margin-top: 1.5rem;
-	margin-bottom: 1rem;
-	font-size: var(--h2-fontsize);
-	font-weight: bold;
-	color: var(--header-color);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: var(--h2-fontsize);
+  font-weight: bold;
+  color: var(--header-color);
 }
 
 h3 {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	font-size: var(--h3-fontsize);
-	font-weight: bold;
-	color: var(--header-color);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: var(--h3-fontsize);
+  font-weight: bold;
+  color: var(--header-color);
 }
 
 h4,
 h5,
 h6 {
-	margin-top: 1rem;
-	margin-bottom: 0rem;
-	font-size: 1rem;
-	color: var(--header-color);
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  font-size: 1rem;
+  color: var(--header-color);
 }
 
 h1::before,
 h2::before,
 h3::before {
-	font-weight: 400;
-	font-size: 1rem;
-	text-align: right;
-	width: 3.5ch;
-	padding-right: 1ch;
-	margin-left: -3.5ch;
-	color: var(--accent-color);
-	display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: right;
+  width: 3.5ch;
+  padding-right: 1ch;
+  margin-left: -3.5ch;
+  color: var(--accent-color);
+  display: inline-block;
 }
 
 h1::before {
-	content: "#1";
+  content: "#1";
 }
 
 h2::before {
-	content: "#2";
+  content: "#2";
 }
 
 h3::before {
-	content: "#3";
+  content: "#3";
 }
 
 /* table */
 table {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* table header */
@@ -252,17 +252,17 @@ tr {
 /* table cell */
 td,
 th {
-	border-style: solid;
-	border-color: var(--border-color);
-	border-width: 1px 0;
-	padding-top: 0.375rem;
-	padding-bottom: 0.375rem;
+  border-style: solid;
+  border-color: var(--border-color);
+  border-width: 1px 0;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
 }
 
 /* Remove table top border if immediately after a H2 which has a border already */
 h2 + table tr:first-child th,
 h2 + table tr:first-child td {
-	border-top-width: 0;
+  border-top-width: 0;
 }
 
 /* tooltip above tables */
@@ -277,17 +277,17 @@ h2 + table tr:first-child td {
 .md-toc-h4,
 .md-toc-h5,
 .md-toc-h6 {
-	display: none;
+  display: none;
 }
 
 /* Smaller 'padding' between the ToC and content. */
 .md-toc {
-	min-height: 2rem;
+  min-height: 2rem;
 }
 
 /* Smaller 'padding' for the top of the content on MacOS */
 .mac-seamless-mode content {
-	margin-top: -20px;
+  margin-top: -20px;
 }
 
 /* lists */
@@ -301,42 +301,42 @@ ul li {
 }
 
 li p {
-	margin: 0;
+  margin: 0;
 }
 
 .task-list {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 .task-list-item {
-	padding-left: 1.5em;
-	margin-bottom: 0rem;
+  padding-left: 1.5em;
+  margin-bottom: 0rem;
 }
 
 #write input[type="checkbox"] {
-	margin-top: 5px;
+  margin-top: 5px;
 }
 
 /* blockquote */
 blockquote {
-	margin: 1rem 0;
-	padding-left: 2ch;
-	margin-left: 0.5ch;
-	position: relative;
-	overflow: hidden;
-	border-left: 2px solid var(--border-color);
+  margin: 1rem 0;
+  padding-left: 2ch;
+  margin-left: 0.5ch;
+  position: relative;
+  overflow: hidden;
+  border-left: 2px solid var(--border-color);
 }
 
 /* hr */
 hr {
-	border: none;
-	border-bottom: 1px solid var(--border-color);
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 p {
-	margin: 0.8rem 0;
+  margin: 0.8rem 0;
 }
 
 /* diagram panel */
@@ -361,62 +361,62 @@ p {
  */
 
 .cm-s-inner {
-	border: 1px solid var(--border-color);
-	border-radius: var(--border-radius);
-	padding: 0.25rem 0;
-	background-color: var(--accented-background-color);
-	font-family: var(--monospace-font);
-	font-size: var(--code-font-size);
-	line-height: var(--code-line-height);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 0.25rem 0;
+  background-color: var(--accented-background-color);
+  font-family: var(--monospace-font);
+  font-size: var(--code-font-size);
+  line-height: var(--code-line-height);
 }
 .cm-s-inner .CodeMirror-gutters {
-	background: var(--accented-background-color);
+  background: var(--accented-background-color);
 }
 
 /* code tooltip */
 .code-tooltip {
-	box-shadow: none;
-	border-radius: 0 0 var(--border-radius) var(--border-radius);
-	background-color: var(--accented-background-color);
-	border-color: var(--border-color);
-	border-style: solid;
-	border-width: 0 1px 1px 1px;
+  box-shadow: none;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  background-color: var(--accented-background-color);
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
 }
 
 .code-tooltip input {
-	outline: none;
-	width: 20ch;
+  outline: none;
+  width: 20ch;
 }
 
 .md-fences .code-tooltip {
-	bottom: 0;
-	padding: none;
+  bottom: 0;
+  padding: none;
 }
 
 .md-fences.md-focus .cm-s-inner {
-	/* Remove bottom right border radius when tooltip is shown */
-	border-bottom-right-radius: 0;
+  /* Remove bottom right border radius when tooltip is shown */
+  border-bottom-right-radius: 0;
 }
 
 /* code tooltip autocomplete list */
 .autoComplt-list {
-	width: 20ch !important;
-	border-radius: var(--border-radius) !important;
-	background-color: var(--accented-background-color) !important;
-	border: 1px solid var(--border-color) !important;
+  width: 20ch !important;
+  border-radius: var(--border-radius) !important;
+  background-color: var(--accented-background-color) !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 .autoComplt-hint {
-	background-color: transparent !important;
-	margin: 0 !important;
-	padding: 0.125rem 0.375rem !important;
-	color: var(--text-color) !important;
-	line-height: var(--line-height) !important;
-	height: 1.4rem !important;
+  background-color: transparent !important;
+  margin: 0 !important;
+  padding: 0.125rem 0.375rem !important;
+  color: var(--text-color) !important;
+  line-height: var(--line-height) !important;
+  height: 1.4rem !important;
 }
 .autoComplt-hint-selected {
-	background-color: var(--link-color) !important;
-	color: var(--bg-color) !important;
+  background-color: var(--link-color) !important;
+  color: var(--bg-color) !important;
 }
 
 /**
@@ -431,13 +431,13 @@ p {
 /* basic styles */
 
 code {
-	font-family: var(--monospace-font);
-	font-size: var(--monospace-font-size);
-	line-height: var(--monospace-line-height);
-	color: var(--monospace-foreground-color);
-	background-color: var(--monospace-background-color);
-	padding: 0 0.125rem;
-	border-radius: 0.25rem;
+  font-family: var(--monospace-font);
+  font-size: var(--monospace-font-size);
+  line-height: var(--monospace-line-height);
+  color: var(--monospace-foreground-color);
+  background-color: var(--monospace-background-color);
+  padding: 0 0.125rem;
+  border-radius: 0.25rem;
 }
 
 strong {
@@ -447,7 +447,7 @@ em {
 }
 
 a {
-	color: var(--link-color);
+  color: var(--link-color);
 }
 
 img {
@@ -472,23 +472,23 @@ sup {
  * see http:/*support.typora.io/Code-Block-Styles
  */
 #typora-source {
-	.cm-header {
-	}
+  .cm-header {
+  }
 
-	.cm-strong {
-	}
+  .cm-strong {
+  }
 
-	.cm-em {
-	}
+  .cm-em {
+  }
 
-	.cm-link {
-	}
+  .cm-link {
+  }
 
-	.cm-string {
-	}
+  .cm-string {
+  }
 
-	.cm-comment {
-	}
+  .cm-comment {
+  }
 }
 
 /**
@@ -523,7 +523,7 @@ sup {
 }
 
 #write div.md-toc-tooltip {
-	background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 /**
@@ -532,7 +532,7 @@ sup {
 
 /* quick open panel */
 #typora-quick-open {
-	/*background-color: #525C65; */
+  /*background-color: #525C65; */
 }
 
 #md-searchpanel,
@@ -540,11 +540,11 @@ sup {
 .modal-content,
 .popover,
 .context-menu {
-	/*background-color: @dialog-background; */
+  /*background-color: @dialog-background; */
 }
 
 .popover.bottom > .arrow:after {
-	/*border-bottom-color: @dialog-background; */
+  /*border-bottom-color: @dialog-background; */
 }
 
 /**
