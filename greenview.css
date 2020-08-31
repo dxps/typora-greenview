@@ -5,7 +5,6 @@
 @import "greenview/sourcemode.dark.css";
 
 :root {
-  --border-color: #e1e7e8;
   --code-bg-color: #f8f8f8;
   /* */
   --body-font: "source-sans-pro", sans-serif;
@@ -35,7 +34,7 @@
   --bg-color: #263238;
   --text-color: #afd9d4;
   --header-color: #69a47c;
-  --border-color: #263238;
+  --border-color: #3b4d56;
   --link-color: #4fc3f7;
 
   --select-text-bg-color: #12a390;
