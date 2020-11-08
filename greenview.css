@@ -25,13 +25,13 @@
   --monospace-font: "mplus-1mn", "Mononoki", monospace;
   --monospace-line-height: 1;
   --monospace-foreground-color: #24c4b6;
-  --monospace-background-color: #263238;
+  --monospace-background-color: #002a35;
 
   --nav-width: 200px;
   --vertical-padding: 8px;
   --accent-color: #194a55;
   --accented-background-color: #303b41;
-  --bg-color: #263238;
+  --bg-color: #002a35;
   --text-color: #afd9d4;
   --header-color: #69a47c;
   --border-color: #3b4d56;
@@ -39,7 +39,7 @@
 
   --select-text-bg-color: #12a390;
   --select-text-font-color: #fff;
-  --side-bar-bg-color: #263238;
+  --side-bar-bg-color: #002a35;
   --active-file-bg-color: #2f3e46;
 
   --window-border: 1px solid rgba(0, 0, 0, 0.07);
