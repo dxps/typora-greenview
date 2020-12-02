@@ -15,6 +15,9 @@
   --h1-fontsize: 2rem;
   --h2-fontsize: 1.5rem;
   --h3-fontsize: 1.125rem;
+  --h4-fontsize: 1rem;
+  --h5-fontsize: 0.95rem;
+  --h6-fontsize: 0.8rem;
   --line-height: 1.2;
   --main-content-margin: 0 auto;
   --main-content-max-width: 200ch;
@@ -205,8 +208,16 @@ h5,
 h6 {
   margin-top: 1rem;
   margin-bottom: 0rem;
-  font-size: 1rem;
+  font-size: var(--h4-fontsize);
   color: var(--header-color);
+}
+
+h5 {
+  font-size: var(--h5-fontsize);
+}
+
+h6 {
+  font-size: var(--h6-fontsize);
 }
 
 h1::before,
