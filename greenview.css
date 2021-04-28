@@ -1,17 +1,16 @@
-/* @import "greenview/source-sans-pro-font/source-sans-pro.css"; */
-/* @import "greenview/mononoki/mononoki.css"; */
-@import "greenview/codeblock.dark.css";
-@import "greenview/mermaid.dark.css";
-@import "greenview/sourcemode.dark.css";
+@import 'greenview/codeblock.dark.css';
+@import 'greenview/mermaid.dark.css';
+@import 'greenview/sourcemode.dark.css';
 
 :root {
   --code-bg-color: #f8f8f8;
   /* */
-  --body-font: "source-sans-pro", sans-serif;
+  /* --body-font: "source-sans-pro", sans-serif; */
+  --body-font: 'fira-sans-condensed', sans-serif;
   --border-radius: 6px;
   --document-horizontal-margin: 30px;
   --document-padding-x: 4ch;
-  --font-size: 16px;
+  --font-size: 15px;
   --h1-fontsize: 2rem;
   --h2-fontsize: 1.5rem;
   --h3-fontsize: 1.125rem;
@@ -25,7 +24,7 @@
   --code-font-size: 15px;
   --code-line-height: 1.1;
   --monospace-font-size: 15px;
-  --monospace-font: "mplus-1mn", "Mononoki", monospace;
+  --monospace-font: 'mplus-1mn', 'Mononoki', monospace;
   --monospace-line-height: 1;
   --monospace-foreground-color: #24c4b6;
   --monospace-background-color: #002a35;
@@ -49,7 +48,7 @@
 }
 
 #write {
-  cursor: -webkit-image-set(url("night/cursor.png") 1x, url("night/cursor@2x.png") 2x) 8 8, auto;
+  cursor: -webkit-image-set(url('night/cursor.png') 1x, url('night/cursor@2x.png') 2x) 8 8, auto;
 }
 
 /* 
@@ -59,71 +58,128 @@
 */
 
 @font-face {
-  font-family: "source-sans-pro";
+  font-family: 'fira-sans-condensed';
   font-style: normal;
-  font-weight: normal;
-  src: local("source-sans-pro"), local("SourceSansPro-Regular"),
-    url("./greenview/source-sans-pro-font/SourceSansPro-Regular.ttf");
-}
-@font-face {
-  font-family: "source-sans-pro";
-  font-style: italic;
-  font-weight: normal;
-  src: local("source-sans-pro"), local("SourceSansPro-It"),
-    url("./greenview/source-sans-pro-font/SourceSansPro-It.ttf");
+  font-weight: 400;
+  src: url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    /* IE6-IE8 */ url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* Super Modern Browsers */ url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-regular.woff2')
+      format('woff2'),
+    /* Modern Browsers */ url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-regular.woff') format('woff'),
+    /* Safari, Android, iOS */ url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-regular.ttf')
+      format('truetype'),
+    /* Legacy iOS */ url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-regular.svg#FiraSansCondensed')
+      format('svg');
 }
 
+/* fira-sans-condensed-italic - latin */
 @font-face {
-  font-family: "source-sans-pro";
+  font-family: 'fira-sans-condensed';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-italic.eot');
+  src: local(''),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-italic.eot?#iefix') format('embedded-opentype'),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-italic.woff2') format('woff2'),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-italic.woff') format('woff'),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-italic.ttf') format('truetype'),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-italic.svg#FiraSansCondensed') format('svg');
+}
+
+/* fira-sans-condensed, regular, with weight=500 and declared as bold */
+@font-face {
+  font-family: 'fira-sans-condensed';
   font-style: normal;
   font-weight: bold;
-  src: local("source-sans-pro"), local("SourceSansPro-Semibold"),
-    url("./greenview/source-sans-pro-font/SourceSansPro-Semibold.ttf");
+  src: url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-500.eot');
+  src: local(''),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-500.eot?#iefix') format('embedded-opentype'),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-500.woff2') format('woff2'),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-500.woff') format('woff'),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-500.ttf') format('truetype'),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-500.svg#FiraSansCondensed') format('svg');
 }
 
+/* fira-sans-condensed, italic, with weight=500 and declared as bold */
 @font-face {
-  font-family: "source-sans-pro";
+  font-family: 'fira-sans-condensed';
   font-style: italic;
-  font-weight: bold;
-  src: local("source-sans-pro"), local("SourceSansPro-SemiboldIt"),
-    url("./greenview/source-sans-pro-font/SourceSansPro-SemiboldIt.ttf");
+  font-weight: 500;
+  src: url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-500italic.eot');
+  src: local(''),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-500italic.eot?#iefix') format('embedded-opentype'),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-500italic.woff2') format('woff2'),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-500italic.woff') format('woff'),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-500italic.ttf') format('truetype'),
+    url('./greenview/fira-sans-condensed-font/fira-sans-condensed-v5-latin-500italic.svg#FiraSansCondensed') format('svg');
 }
 
 @font-face {
-  font-family: "Mononoki";
+  font-family: 'source-sans-pro';
   font-style: normal;
   font-weight: normal;
-  src: local("Mononoki Regular"), url("./greenview/mononoki-font/mononoki-regular.woff") format("woff");
+  src: local('source-sans-pro'), local('SourceSansPro-Regular'), url('./greenview/source-sans-pro-font/SourceSansPro-Regular.ttf');
 }
-
 @font-face {
-  font-family: "Mononoki";
+  font-family: 'source-sans-pro';
   font-style: italic;
   font-weight: normal;
-  src: local("Mononoki Italic"), url("./greenview/mononoki-font/mononoki-italic.woff") format("woff");
+  src: local('source-sans-pro'), local('SourceSansPro-It'), url('./greenview/source-sans-pro-font/SourceSansPro-It.ttf');
 }
 
 @font-face {
-  font-family: "Mononoki";
+  font-family: 'source-sans-pro';
   font-style: normal;
   font-weight: bold;
-  src: local("Mononoki Bold"), url("./greenview/mononoki-font/mononoki-bold.woff") format("woff");
+  src: local('source-sans-pro'), local('SourceSansPro-Semibold'),
+    url('./greenview/source-sans-pro-font/SourceSansPro-Semibold.ttf');
 }
 
 @font-face {
-  font-family: "Mononoki";
+  font-family: 'source-sans-pro';
   font-style: italic;
   font-weight: bold;
-  src: local("Mononoki Bold Italic"), url("./greenview/mononoki-font/mononoki-bolditalic.woff") format("woff");
+  src: local('source-sans-pro'), local('SourceSansPro-SemiboldIt'),
+    url('./greenview/source-sans-pro-font/SourceSansPro-SemiboldIt.ttf');
 }
 
 @font-face {
-  font-family: "mplus-1mn";
+  font-family: 'Mononoki';
   font-style: normal;
   font-weight: normal;
-  src: url("./greenview/mplus-1mn-font/mplus-1mn-regular.eot?#iefix") format("embedded-opentype"),
-    url("./greenview/mplus-1mn-font/mplus-1mn-regular.woff") format("woff"),
-    url("./greenview/mplus-1mn-font/mplus-1mn-regular.ttf") format("truetype");
+  src: local('Mononoki Regular'), url('./greenview/mononoki-font/mononoki-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Mononoki';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Mononoki Italic'), url('./greenview/mononoki-font/mononoki-italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Mononoki';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Mononoki Bold'), url('./greenview/mononoki-font/mononoki-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Mononoki';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Mononoki Bold Italic'), url('./greenview/mononoki-font/mononoki-bolditalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'mplus-1mn';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./greenview/mplus-1mn-font/mplus-1mn-regular.eot?#iefix') format('embedded-opentype'),
+    url('./greenview/mplus-1mn-font/mplus-1mn-regular.woff') format('woff'),
+    url('./greenview/mplus-1mn-font/mplus-1mn-regular.ttf') format('truetype');
 }
 
 /* --- end of Fonts section --- */
@@ -234,15 +290,15 @@ h3::before {
 }
 
 h1::before {
-  content: "#1";
+  content: '#1';
 }
 
 h2::before {
-  content: "#2";
+  content: '#2';
 }
 
 h3::before {
-  content: "#3";
+  content: '#3';
 }
 
 /* table */
@@ -323,7 +379,7 @@ li p {
   margin-bottom: 0rem;
 }
 
-#write input[type="checkbox"] {
+#write input[type='checkbox'] {
   margin-top: 5px;
 }
 
